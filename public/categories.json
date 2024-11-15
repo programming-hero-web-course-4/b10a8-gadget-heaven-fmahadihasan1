@@ -1,0 +1,37 @@
+[
+  {
+    "name": "All",
+    "display_name": "All Gadgets",
+    "id": "001"
+  },
+  {
+    "name": "computers",
+    "display_name": "Computers",
+    "id": "002"
+  },
+  {
+    "name": "phones",
+    "display_name": "Phones",
+    "id": "003"
+  },
+  {
+    "name": "smart_wathces",
+    "display_name": "Smart Watces",
+    "id": "004"
+  },
+  {
+    "name": "chargers",
+    "display_name": "Chargers",
+    "id": "005"
+  },
+  {
+    "name": "power_banks",
+    "display_name": "Power Banks",
+    "id": "006"
+  },
+  {
+    "name": "others",
+    "display_name": "Others",
+    "id": "007"
+  }
+]

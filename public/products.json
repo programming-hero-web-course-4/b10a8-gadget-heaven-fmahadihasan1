@@ -1,0 +1,461 @@
+[
+  {
+    "id": "PRD001",
+    "image": "https://example.com/images/ultrapro-laptop.jpg",
+    "title": "UltraPro Laptop",
+    "category": "Computers",
+    "price": 1299.99,
+    "description": "A high-performance laptop with a sleek design, ideal for professionals and gamers.",
+    "specifications": [
+      "Intel Core i7 Processor",
+      "16GB RAM",
+      "512GB SSD",
+      "15.6-inch FHD Display",
+      "Windows 11"
+    ],
+    "availability": true,
+    "rating": 4.7,
+    "brand": "TechFusion",
+    "warranty": "2 years",
+    "release_date": "2023-08-15",
+    "stock_quantity": 25
+  },
+  {
+    "id": "PRD002",
+    "image": "https://example.com/images/ecobook-laptop.jpg",
+    "title": "EcoBook Laptop",
+    "category": "Computers",
+    "price": 849.99,
+    "description": "An eco-friendly laptop with energy-efficient performance and compact design.",
+    "specifications": [
+      "AMD Ryzen 5 Processor",
+      "8GB RAM",
+      "256GB SSD",
+      "14-inch HD Display",
+      "Linux OS"
+    ],
+    "availability": true,
+    "rating": 4.2,
+    "brand": "GreenWave",
+    "warranty": "1 year",
+    "release_date": "2022-11-20",
+    "stock_quantity": 10
+  },
+  {
+    "id": "PRD003",
+    "image": "https://example.com/images/galaxy-z-max.jpg",
+    "title": "Galaxy Z Max",
+    "category": "Phones",
+    "price": 999.99,
+    "description": "A premium smartphone with a foldable display and cutting-edge technology.",
+    "specifications": [
+      "Foldable 6.7-inch AMOLED Display",
+      "12GB RAM",
+      "256GB Storage",
+      "5G Connectivity",
+      "Triple-lens Camera"
+    ],
+    "availability": true,
+    "rating": 4.6,
+    "brand": "FutureCom",
+    "warranty": "1 year",
+    "release_date": "2023-05-10",
+    "stock_quantity": 15
+  },
+  {
+    "id": "PRD004",
+    "image": "https://example.com/images/chrono-smartwatch.jpg",
+    "title": "Chrono Smartwatch",
+    "category": "Smart Watches",
+    "price": 299.99,
+    "description": "A stylish smartwatch with health-tracking features and customizable watch faces.",
+    "specifications": [
+      "1.5-inch AMOLED Display",
+      "Heart Rate and Sleep Monitor",
+      "GPS and Fitness Tracking",
+      "Water-Resistant up to 50m",
+      "Bluetooth Connectivity"
+    ],
+    "availability": true,
+    "rating": 4.3,
+    "brand": "TimeTek",
+    "warranty": "1 year",
+    "release_date": "2023-02-15",
+    "stock_quantity": 30
+  },
+  {
+    "id": "PRD005",
+    "image": "https://example.com/images/rapid-charge.jpg",
+    "title": "Rapid Charge 30W Charger",
+    "category": "Chargers",
+    "price": 39.99,
+    "description": "A fast-charging wall adapter compatible with most smartphones and tablets.",
+    "specifications": [
+      "30W Power Output",
+      "USB-C Port",
+      "Overcharge Protection",
+      "Compact Design"
+    ],
+    "availability": true,
+    "rating": 4.1,
+    "brand": "PowerUp",
+    "warranty": "6 months",
+    "release_date": "2022-09-01",
+    "stock_quantity": 100
+  },
+  {
+    "id": "PRD006",
+    "image": "https://example.com/images/max-power-bank.jpg",
+    "title": "Max Power 20000mAh Power Bank",
+    "category": "Power Banks",
+    "price": 49.99,
+    "description": "A high-capacity power bank with dual USB ports and fast-charging capability.",
+    "specifications": [
+      "20000mAh Battery Capacity",
+      "Dual USB Output",
+      "Fast Charging Support",
+      "LED Battery Indicator",
+      "Compact and Portable Design"
+    ],
+    "availability": true,
+    "rating": 4.5,
+    "brand": "ChargePro",
+    "warranty": "1 year",
+    "release_date": "2023-01-20",
+    "stock_quantity": 60
+  },
+  {
+    "id": "PRD007",
+    "image": "https://example.com/images/vision-tab-x.jpg",
+    "title": "Vision Tab X",
+    "category": "Tablets",
+    "price": 599.99,
+    "description": "A powerful tablet with a stunning display and multi-tasking capabilities.",
+    "specifications": [
+      "10.5-inch QHD Display",
+      "8GB RAM",
+      "128GB Storage",
+      "Dual Camera System",
+      "10-hour Battery Life"
+    ],
+    "availability": true,
+    "rating": 4.4,
+    "brand": "PixCom",
+    "warranty": "1 year",
+    "release_date": "2023-03-01",
+    "stock_quantity": 40
+  },
+  {
+    "id": "PRD008",
+    "image": "https://example.com/images/audiomaster-buds.jpg",
+    "title": "AudioMaster Buds Pro",
+    "category": "Earbuds",
+    "price": 149.99,
+    "description": "Wireless earbuds with active noise cancellation and high-fidelity sound.",
+    "specifications": [
+      "Bluetooth 5.2",
+      "Active Noise Cancellation",
+      "Up to 24-hour Battery Life with Case",
+      "IPX4 Water-Resistant",
+      "Touch Controls"
+    ],
+    "availability": true,
+    "rating": 4.5,
+    "brand": "AudioMaster",
+    "warranty": "1 year",
+    "release_date": "2023-06-05",
+    "stock_quantity": 75
+  },
+  {
+    "id": "PRD009",
+    "image": "https://example.com/images/speedy-car-charger.jpg",
+    "title": "Speedy Car Charger",
+    "category": "Chargers",
+    "price": 19.99,
+    "description": "Compact car charger with dual USB ports for fast charging on the go.",
+    "specifications": [
+      "Dual USB Ports",
+      "18W Fast Charging",
+      "Compact Design",
+      "Overheat Protection"
+    ],
+    "availability": true,
+    "rating": 4.2,
+    "brand": "DriveCharge",
+    "warranty": "6 months",
+    "release_date": "2022-10-18",
+    "stock_quantity": 200
+  },
+  {
+    "id": "PRD010",
+    "image": "https://example.com/images/fitlife-band.jpg",
+    "title": "FitLife Band",
+    "category": "Fitness Trackers",
+    "price": 99.99,
+    "description": "A lightweight fitness band with health monitoring and activity tracking.",
+    "specifications": [
+      "Heart Rate Monitor",
+      "Step Counter",
+      "Sleep Tracking",
+      "Water-Resistant up to 30m",
+      "10-day Battery Life"
+    ],
+    "availability": true,
+    "rating": 4.3,
+    "brand": "FitLife",
+    "warranty": "1 year",
+    "release_date": "2023-07-12",
+    "stock_quantity": 120
+  },
+  {
+    "id": "PRD011",
+    "image": "https://example.com/images/smart-home-hub.jpg",
+    "title": "Smart Home Hub",
+    "category": "Smart Home",
+    "price": 199.99,
+    "description": "A centralized hub to control all smart home devices with voice assistant integration.",
+    "specifications": [
+      "Voice Assistant Support",
+      "Wi-Fi and Bluetooth Connectivity",
+      "Touchscreen Display",
+      "Multi-device Compatibility",
+      "Privacy Controls"
+    ],
+    "availability": true,
+    "rating": 4.4,
+    "brand": "HomeSync",
+    "warranty": "1 year",
+    "release_date": "2023-04-10",
+    "stock_quantity": 80
+  },
+  {
+    "id": "PRD012",
+    "image": "https://example.com/images/solar-powerbank.jpg",
+    "title": "SolarMax Power Bank",
+    "category": "Power Banks",
+    "price": 59.99,
+    "description": "A solar-powered power bank with rugged design, ideal for outdoor use.",
+    "specifications": [
+      "10000mAh Battery Capacity",
+      "Solar Charging",
+      "Dual USB Output",
+      "Water-Resistant",
+      "LED Flashlight"
+    ],
+    "availability": true,
+    "rating": 4.1,
+    "brand": "EcoCharge",
+    "warranty": "1 year",
+    "release_date": "2022-12-25",
+    "stock_quantity": 50
+  },
+  {
+    "id": "PRD022",
+    "image": "https://example.com/images/ultrapro-laptop.jpg",
+    "title": "UltraPro Laptop",
+    "category": "Computers",
+    "price": 1299.99,
+    "description": "A high-performance laptop with a sleek design, ideal for professionals and gamers.",
+    "specifications": [
+      "Intel Core i7 Processor",
+      "16GB RAM",
+      "512GB SSD",
+      "15.6-inch FHD Display",
+      "Windows 11"
+    ],
+    "availability": true,
+    "rating": 4.7,
+    "brand": "TechFusion",
+    "warranty": "2 years",
+    "release_date": "2023-08-15",
+    "stock_quantity": 25
+  },
+  {
+    "id": "PRD021",
+    "image": "https://example.com/images/ecobook-laptop.jpg",
+    "title": "EcoBook Laptop",
+    "category": "Computers",
+    "price": 849.99,
+    "description": "An eco-friendly laptop with energy-efficient performance and compact design.",
+    "specifications": [
+      "AMD Ryzen 5 Processor",
+      "8GB RAM",
+      "256GB SSD",
+      "14-inch HD Display",
+      "Linux OS"
+    ],
+    "availability": true,
+    "rating": 4.2,
+    "brand": "GreenWave",
+    "warranty": "1 year",
+    "release_date": "2022-11-20",
+    "stock_quantity": 10
+  },
+  {
+    "id": "PRD013",
+    "image": "https://example.com/images/neon-light-phone.jpg",
+    "title": "Neon Light Phone",
+    "category": "Phones",
+    "price": 1199.99,
+    "description": "A vibrant smartphone with a neon display, high refresh rate, and excellent camera quality.",
+    "specifications": [
+      "6.9-inch Neon Display",
+      "12GB RAM",
+      "512GB Storage",
+      "Quad-lens Camera",
+      "5G Connectivity"
+    ],
+    "availability": true,
+    "rating": 4.8,
+    "brand": "NeonTech",
+    "warranty": "2 years",
+    "release_date": "2023-09-01",
+    "stock_quantity": 40
+  },
+  {
+    "id": "PRD014",
+    "image": "https://example.com/images/zen-smart-watch.jpg",
+    "title": "Zen Smart Watch",
+    "category": "Smart Watches",
+    "price": 399.99,
+    "description": "A minimalist smartwatch with advanced meditation and breathing features.",
+    "specifications": [
+      "1.6-inch OLED Display",
+      "Heart Rate Monitoring",
+      "Guided Breathing Exercises",
+      "Waterproof up to 50m",
+      "Battery Life: 5 Days"
+    ],
+    "availability": true,
+    "rating": 4.6,
+    "brand": "ZenGear",
+    "warranty": "1 year",
+    "release_date": "2023-08-10",
+    "stock_quantity": 22
+  },
+  {
+    "id": "PRD015",
+    "image": "https://example.com/images/astro-tablet.jpg",
+    "title": "Astro Tablet",
+    "category": "Tablets",
+    "price": 749.99,
+    "description": "A powerful tablet optimized for creative professionals and artists.",
+    "specifications": [
+      "11-inch Retina Display",
+      "8GB RAM",
+      "256GB Storage",
+      "Pencil Support",
+      "10-hour Battery Life"
+    ],
+    "availability": true,
+    "rating": 4.9,
+    "brand": "Astro",
+    "warranty": "1 year",
+    "release_date": "2023-07-25",
+    "stock_quantity": 30
+  },
+  {
+    "id": "PRD016",
+    "image": "https://example.com/images/duo-car-charger.jpg",
+    "title": "Duo Car Charger",
+    "category": "Chargers",
+    "price": 29.99,
+    "description": "A dual-port car charger with USB-C and USB-A compatibility.",
+    "specifications": [
+      "USB-C and USB-A Ports",
+      "30W Fast Charging",
+      "Overheat Protection",
+      "Compact Design"
+    ],
+    "availability": true,
+    "rating": 4.3,
+    "brand": "ChargeDuo",
+    "warranty": "6 months",
+    "release_date": "2023-03-15",
+    "stock_quantity": 120
+  },
+  {
+    "id": "PRD017",
+    "image": "https://example.com/images/wave-sound-speaker.jpg",
+    "title": "Wave Sound Bluetooth Speaker",
+    "category": "Audio",
+    "price": 179.99,
+    "description": "A portable Bluetooth speaker with powerful bass and 360-degree sound.",
+    "specifications": [
+      "Bluetooth 5.1",
+      "10-hour Battery Life",
+      "Waterproof IPX6",
+      "360-degree Sound",
+      "Built-in Microphone"
+    ],
+    "availability": true,
+    "rating": 4.7,
+    "brand": "WaveAudio",
+    "warranty": "1 year",
+    "release_date": "2023-05-18",
+    "stock_quantity": 45
+  },
+  {
+    "id": "PRD018",
+    "image": "https://example.com/images/smart-case.jpg",
+    "title": "SmartCase Laptop Sleeve",
+    "category": "Accessories",
+    "price": 49.99,
+    "description": "A durable laptop sleeve with smart temperature control and extra storage.",
+    "specifications": [
+      "Water-resistant",
+      "Temperature Control",
+      "Fits Laptops up to 15 inches",
+      "Extra Storage Pockets",
+      "Magnetic Closure"
+    ],
+    "availability": true,
+    "rating": 4.4,
+    "brand": "SmartGear",
+    "warranty": "1 year",
+    "release_date": "2022-12-12",
+    "stock_quantity": 150
+  },
+  {
+    "id": "PRD019",
+    "image": "https://example.com/images/mega-powerbank-30000mah.jpg",
+    "title": "Mega Powerbank 30000mAh",
+    "category": "Power Banks",
+    "price": 69.99,
+    "description": "A massive 30000mAh power bank with fast-charging and triple USB output.",
+    "specifications": [
+      "30000mAh Battery Capacity",
+      "Triple USB Output",
+      "Fast Charging",
+      "LED Battery Indicator",
+      "Compact and Portable Design"
+    ],
+    "availability": true,
+    "rating": 4.6,
+    "brand": "MegaCharge",
+    "warranty": "1 year",
+    "release_date": "2023-06-20",
+    "stock_quantity": 70
+  },
+  {
+    "id": "PRD020",
+    "image": "https://example.com/images/silence-noise-cancelling-headphones.jpg",
+    "title": "Silence Noise-Cancelling Headphones",
+    "category": "Audio",
+    "price": 249.99,
+    "description": "Over-ear headphones with active noise cancellation and high-resolution sound.",
+    "specifications": [
+      "Active Noise Cancellation",
+      "Bluetooth 5.2",
+      "20-hour Battery Life",
+      "Memory Foam Cushions",
+      "Hi-Res Audio"
+    ],
+    "availability": true,
+    "rating": 4.8,
+    "brand": "Silence",
+    "warranty": "1 year",
+    "release_date": "2023-04-22",
+    "stock_quantity": 80
+  }
+]
