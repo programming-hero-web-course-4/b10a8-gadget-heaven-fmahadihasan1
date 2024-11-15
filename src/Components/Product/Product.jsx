@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 const Product = ({ product }) => {
   const {
     id,
@@ -37,8 +39,9 @@ const Product = ({ product }) => {
             </p>
             <h4 className="">Price: ${price}</h4>
           </div>
-
-          <button className="btn btn-outline">View Details</button>
+          <button className="btn btn-outline">
+            <Link to={`/details/${id}`}>View Details</Link>
+          </button>
         </div>
       </section>
     </>

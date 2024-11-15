@@ -1,7 +1,6 @@
 import { useEffect, useState } from "react";
-import { Link } from "react-router-dom";
 
-const Categories = () => {
+const Categories = ({ dataAccordingToCategory }) => {
   const [categoryBtn, setCategoryBtn] = useState([]);
 
   useEffect(() => {
@@ -14,7 +13,11 @@ const Categories = () => {
   return (
     <ul className="col-span-1 sticky top-0 flex flex-col gap-4">
       {categoryBtn.map((btn) => (
-        <li key={btn.id} className="btn capitalize">
+        <li
+          key={btn.id}
+          onClick={() => dataAccordingToCategory(btn.name)}
+          className="btn capitalize"
+        >
           {btn.display_name}
         </li>
       ))}
