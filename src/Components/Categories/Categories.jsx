@@ -11,15 +11,21 @@ const Categories = ({ dataAccordingToCategory }) => {
   }, []);
 
   return (
-    <ul className="col-span-1 sticky top-0 flex flex-col gap-4">
-      {categoryBtn.map((btn) => (
-        <li
+    <ul
+      role="tablist"
+      className="tabs tabs-bordered col-span-1 sticky top-0 flex items-center flex-col gap-4 text-left"
+    >
+      {categoryBtn.map((btn, idx) => (
+        <input
           key={btn.id}
+          type="radio"
+          name="my_tabs_1"
+          role="tab"
           onClick={() => dataAccordingToCategory(btn.name)}
-          className="btn capitalize"
-        >
-          {btn.display_name}
-        </li>
+          className="btn capitalize rounded-xl w-full"
+          aria-label={btn.display_name}
+          defaultChecked={idx === 0}
+        />
       ))}
     </ul>
   );

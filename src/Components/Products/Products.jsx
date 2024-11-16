@@ -45,10 +45,10 @@ const Products = () => {
     } else {
       const sorted = [...products].filter(
         (prod) =>
-          prod.category !== "Computers" ||
-          prod.category !== "Phones" ||
-          prod.category !== "Smart Watches" ||
-          prod.category !== "Chargers" ||
+          prod.category !== "Computers" &&
+          prod.category !== "Phones" &&
+          prod.category !== "Smart Watches" &&
+          prod.category !== "Chargers" &&
           prod.category !== "Power Banks"
       );
       return setShowingProducts(sorted);
@@ -66,7 +66,7 @@ const Products = () => {
             dataAccordingToCategory={dataAccordingToCategory}
           ></Categories>
         </div>
-        <div className="col-span-3 grid grid-cols-3 gap-3">
+        <div role="tabpanel" className="col-span-3 grid grid-cols-3 gap-3">
           {showingProducts.map((elm) => (
             <Product product={elm} key={elm.id}></Product>
           ))}
