@@ -39,9 +39,11 @@ const Product = ({ product }) => {
             </p>
             <h4 className="">Price: ${price}</h4>
           </div>
-          <button className="btn btn-outline">
-            <Link to={`/details/${id}`}>View Details</Link>
-          </button>
+          <div>
+            <Link to={`/details/${id}`}>
+              <button className="btn btn-outline">View Details</button>
+            </Link>
+          </div>
         </div>
       </section>
     </>

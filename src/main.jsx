@@ -5,6 +5,7 @@ import App from "./App.jsx";
 import { createBrowserRouter, Link, RouterProvider } from "react-router-dom";
 import Home from "./Home/Home.jsx";
 import ErrorPage from "./Components/ErropPage/ErrorPage.jsx";
+import Details from "./Components/Details/Details.jsx";
 
 const router = createBrowserRouter(
   [
@@ -24,6 +25,11 @@ const router = createBrowserRouter(
         {
           path: "/dashboard",
           element: <>Dashboard</>,
+        },
+        {
+          path: "/details/:product_id",
+          element: <Details></Details>,
+          
         },
       ],
     },
