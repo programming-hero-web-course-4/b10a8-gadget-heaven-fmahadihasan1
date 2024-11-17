@@ -1,9 +1,12 @@
 import { BsCartDash } from "react-icons/bs";
 import { IoHeartCircleOutline } from "react-icons/io5";
 import { Link, NavLink, useLocation } from "react-router-dom";
+import { CartDataContext } from "../../CartContext";
+import { useContext } from "react";
 
 const Navbar = () => {
   const { pathname } = useLocation();
+  const { cartData } = useContext(CartDataContext);
   const links = (
     <>
       <li>
@@ -55,7 +58,11 @@ const Navbar = () => {
         <ul className="menu menu-horizontal px-1">{links}</ul>
       </div>
       <div className="navbar-end text-3xl gap-3 font-bold">
-        <Link to={"/checkout"}>
+        <Link to={"/dashboard"} className="indicator">
+          <span className="indicator-item badge-sm text-purple-500 bg-slate-200 rounded-full">
+            {" "}
+            {cartData.length > 0 && cartData.length}{" "}
+          </span>
           <BsCartDash />
         </Link>
         <Link to={"/wishlist"}>

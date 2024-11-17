@@ -1,10 +1,13 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, useContext } from "react";
 import { useParams } from "react-router-dom";
+import { CartDataContext } from "../../CartContext";
 
 const Details = () => {
   const { product_id } = useParams();
 
-  const [showingCard, setShowingCard] = useState([]); // Use `null` as the initial value
+  const [showingCard, setShowingCard] = useState([]);
+
+  const { cartData, setCartData } = useContext(CartDataContext);
 
   useEffect(() => {
     fetch("/products.json")
@@ -14,6 +17,12 @@ const Details = () => {
       })
       .catch((err) => console.error(err));
   }, [product_id]);
+
+  const handleAddToCart = (prod) => {
+    const checkAdded = cartData.find((elm) => prod === elm);
+
+      return !checkAdded && setCartData([...cartData, prod]);
+  };
 
   const {
     id,
@@ -68,7 +77,12 @@ const Details = () => {
             )}
             <p>Ratings : {rating} *</p>
             <div className="space-x-2">
-              <button className="btn">Add to Cart *</button>
+              <button
+                className="btn"
+                onClick={() => handleAddToCart(showingCard)}
+              >
+                Add to Cart *
+              </button>
               <button className="btn">()</button>
             </div>
           </div>
