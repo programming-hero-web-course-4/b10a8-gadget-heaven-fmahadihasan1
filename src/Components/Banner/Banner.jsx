@@ -8,7 +8,7 @@ const Banner = () => {
       <section className=" border rounded-xl bg-white p-1">
         <Navbar />
 
-        <section className="bg-purple-600 pt-10 pb-60 flex flex-col items-center space-y-6 text-white rounded-br-xl rounded-bl-xl relative">
+        <section className="bg-purple-600 pt-10 pb-60 flex flex-col items-center space-y-6 text-white rounded-br-xl rounded-bl-xl">
           {/* Title and Description */}
           <h1 className="text-4xl font-bold max-w-3xl text-center">
             Upgrade Your Tech Accessorize with Gadget Heaven Accessories
@@ -27,8 +27,8 @@ const Banner = () => {
           </Link>
         </section>
       </section>
-      <div className="h-[350px] max-w-7xl mx-auto">
-        <figure className="absolute max-w-3xl top-[380px] left-[500px] border-[#FFFFFF]  border-2 rounded-2xl p-3">
+      <div className="flex justify-center max-w-7xl -mt-52">
+        <figure className="max-w-3xl border-[#FFFFFF]  border-2 rounded-2xl p-3">
           <img
             src={headerImage}
             alt="VR Headset"
