@@ -21,7 +21,7 @@ const Details = () => {
   const handleAddToCart = (prod) => {
     const checkAdded = cartData.find((elm) => prod === elm);
 
-      return !checkAdded && setCartData([...cartData, prod]);
+    return !checkAdded && setCartData([...cartData, prod]);
   };
 
   const {
@@ -60,25 +60,27 @@ const Details = () => {
               alt={`image of ${title}`}
             />
           </figure>
-          <div className="">
-            <h2>{title}</h2>
-            <p>Price: $ {price}</p>
-            <p>{availability ? `in stock` : `out of stock`}</p>
-            <p>{description}</p>
+          <div className="space-y-3">
+            <h2 className="font-semibold text-3xl">{title}</h2>
+            <p className="font-semibold text-xl">Price: $ {price}</p>
+            <p className="font-medium text-sm rounded-full border border-green-400 text-green-600 inline-block py-2 px-4">
+              {availability ? `In stock` : `Out of stock`}
+            </p>
+            <p className="font-normal text-lg text-gray-500">{description}</p>
             {specifications && (
               <>
-                <h3>Specifications:</h3>
-                <ul className="list-decimal list-inside">
+                <h3 className="font-bold text-lg">Specifications:</h3>
+                <ul className="list-decimal list-inside font-normal text-lg text-gray-500">
                   {specifications.map((elm, idx) => (
                     <li key={idx}> {elm} </li>
                   ))}
                 </ul>
               </>
             )}
-            <p>Ratings : {rating} *</p>
+            <p className="text-lg font-bold">Ratings : {rating} *</p>
             <div className="space-x-2">
               <button
-                className="btn"
+                className="btn bg-purple-600 text-white py-3 px-5 rounded-full"
                 onClick={() => handleAddToCart(showingCard)}
               >
                 Add to Cart *

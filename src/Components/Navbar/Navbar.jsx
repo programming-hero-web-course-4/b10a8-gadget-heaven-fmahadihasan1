@@ -59,10 +59,13 @@ const Navbar = () => {
       </div>
       <div className="navbar-end text-3xl gap-3 font-bold">
         <Link to={"/dashboard"} className="indicator">
-          <span className="indicator-item badge-sm text-purple-500 bg-slate-200 rounded-full">
-            {" "}
-            {cartData.length > 0 && cartData.length}{" "}
-          </span>
+          {cartData.length > 0 && (
+            <span className="indicator-item badge-sm text-purple-500 bg-slate-200 rounded-full">
+              {" "}
+              {cartData.length}{" "}
+            </span>
+          )}
+
           <BsCartDash />
         </Link>
         <Link to={"/wishlist"}>
