@@ -1,6 +1,16 @@
+import { useContext } from "react";
 import { ImCancelCircle } from "react-icons/im";
+import { CartDataContext } from "../../CartContext";
 
 const ProductDataInCart = ({ prod }) => {
+  const { cartData, setCartData } = useContext(CartDataContext);
+
+  const handleRemoveProduct = (id) => {
+    const data = cartData.filter((product) => product.id !== id);
+    console.log(data);
+    setCartData(data);
+  };
+
   return (
     <section className="flex justify-between items-center border rounded-xl shadow-md p-8 bg-white">
       <div className="flex items-center gap-4">
@@ -13,7 +23,10 @@ const ProductDataInCart = ({ prod }) => {
           <h3 className="font-semibold text-xl">Price: ${prod.price}</h3>
         </div>
       </div>
-      <div className="text-red-600 text-3xl cursor-pointer hover:text-red-800">
+      <div
+        onClick={() => handleRemoveProduct(prod.id)}
+        className="text-red-600 text-3xl cursor-pointer hover:text-red-800"
+      >
         <ImCancelCircle />
       </div>
     </section>

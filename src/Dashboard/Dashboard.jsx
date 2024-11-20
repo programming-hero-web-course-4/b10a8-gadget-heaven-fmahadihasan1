@@ -10,12 +10,10 @@ const Dashboard = () => {
   const [total, setTotal] = useState(0);
 
   const handleTotal = () => {
-    if (cartData.length > 0) {
-      const totalPrice = cartData.reduce((accumulator, product) => {
-        return accumulator + parseFloat(product.price);
-      }, 0);
-      setTotal(totalPrice);
-    }
+    const totalPrice = cartData.reduce((accumulator, product) => {
+      return accumulator + parseFloat(product.price);
+    }, 0);
+    setTotal(totalPrice);
   };
   useEffect(() => {
     handleTotal();
@@ -57,7 +55,9 @@ const Dashboard = () => {
             <h3 className="font-bold text-2xl">Cart</h3>
           </div>
           <div className="flex items-center gap-5">
-            <h3 className="font-bold text-2xl">Total Coast: $ {total}</h3>
+            <h3 className="font-bold text-2xl">
+              Total Coast: $ {total.toFixed(2)}
+            </h3>
             <button
               className={`"btn border rounded-full px-8 py-3 bg-white text-purple-500 font-bold border-purple-500 flex items-center gap-1
                  `}
