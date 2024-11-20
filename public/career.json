@@ -1,0 +1,83 @@
+[
+    {
+      "id": "1",
+      "title": "Web Maintenance Specialist",
+      "location": "Dubai, UAE",
+      "type": "Full-Time",
+      "description": "Responsible for maintaining the website, ensuring all pages are functional, updating product listings, and optimizing the site for SEO and user experience.",
+      "requirements": [
+        "Bachelor's degree in Computer Science or related field",
+        "Proficiency in HTML, CSS, JavaScript, and CMS platforms (e.g., WordPress, Shopify)",
+        "Experience with website optimization and debugging",
+        "Knowledge of SEO best practices"
+      ],
+      "salary": "AED 6,000 - AED 8,000 per month",
+      "apply_by": "2024-12-15",
+      "contact_email": "careers@gadgetheaven.com"
+    },
+    {
+      "id": "2",
+      "title": "Store Manager",
+      "location": "Sharjah, UAE",
+      "type": "Full-Time",
+      "description": "Oversee daily operations at Gadget Heaven's retail store, manage staff, maintain inventory, and ensure excellent customer service.",
+      "requirements": [
+        "Proven experience in retail management",
+        "Strong leadership and organizational skills",
+        "Ability to analyze sales data and suggest improvements",
+        "Excellent communication skills"
+      ],
+      "salary": "AED 7,000 - AED 9,000 per month",
+      "apply_by": "2024-12-20",
+      "contact_email": "careers@gadgetheaven.com"
+    },
+    {
+      "id": "3",
+      "title": "Delivery Driver",
+      "location": "Abu Dhabi, UAE",
+      "type": "Part-Time",
+      "description": "Deliver gadgets and accessories to customers promptly while ensuring excellent service and product safety.",
+      "requirements": [
+        "Valid UAE driving license",
+        "Good knowledge of local routes",
+        "Ability to lift and carry packages up to 15kg",
+        "Customer service skills"
+      ],
+      "salary": "AED 3,000 - AED 4,500 per month",
+      "apply_by": "2024-12-10",
+      "contact_email": "careers@gadgetheaven.com"
+    },
+    {
+      "id": "4",
+      "title": "Warehouse Assistant",
+      "location": "Dubai, UAE",
+      "type": "Full-Time",
+      "description": "Assist in managing inventory, packing orders, and coordinating deliveries from the warehouse to the store or customers.",
+      "requirements": [
+        "High school diploma or equivalent",
+        "Experience in inventory management or logistics",
+        "Attention to detail and time management skills",
+        "Basic computer knowledge"
+      ],
+      "salary": "AED 4,500 - AED 6,000 per month",
+      "apply_by": "2024-12-12",
+      "contact_email": "careers@gadgetheaven.com"
+    },
+    {
+      "id": "5",
+      "title": "E-Commerce Specialist",
+      "location": "Dubai, UAE",
+      "type": "Full-Time",
+      "description": "Manage the online store, optimize product pages for conversions, monitor sales, and execute marketing campaigns to drive online growth.",
+      "requirements": [
+        "Bachelor's degree in Marketing, Business, or related field",
+        "Experience with e-commerce platforms (e.g., Shopify, Magento)",
+        "Knowledge of digital marketing and analytics tools",
+        "Strong communication and teamwork skills"
+      ],
+      "salary": "AED 6,000 - AED 8,500 per month",
+      "apply_by": "2024-12-18",
+      "contact_email": "careers@gadgetheaven.com"
+    }
+  ]
+  

@@ -9,6 +9,7 @@ import Details from "./Components/Details/Details.jsx";
 import CartContext from "./CartContext.jsx";
 import Dashboard from "./Dashboard/Dashboard.jsx";
 import { Toaster } from "react-hot-toast";
+import Career from "./Career/Career";
 
 const router = createBrowserRouter(
   [
@@ -28,6 +29,11 @@ const router = createBrowserRouter(
         {
           path: "/dashboard",
           element: <Dashboard></Dashboard>,
+        },
+        {
+          path: "/career",
+          element: <Career></Career>,
+          loader: () => fetch("career.json"),
         },
         {
           path: "/details/:product_id",
