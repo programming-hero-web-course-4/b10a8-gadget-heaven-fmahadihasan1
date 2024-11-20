@@ -7,18 +7,32 @@ import ProductDataInWishlisht from "../Components/ProductDataInWishlisht/Product
 const Dashboard = () => {
   const { cartData, wishlist } = useContext(CartDataContext);
 
+  const [sorted, setSorted] = useState([]);
   const [isCartBtnCliked, setIsCartBtnClicked] = useState(true);
   const [total, setTotal] = useState(0);
 
   const handleTotal = () => {
     const totalPrice = cartData.reduce((accumulator, product) => {
-      return accumulator + parseFloat(product.price);
+      return accumulator + parseFloat(product.price || 0);
     }, 0);
     setTotal(totalPrice);
   };
+
   useEffect(() => {
     handleTotal();
+    setSorted(cartData);
   }, [cartData]);
+
+  useEffect(() => {
+    if (isCartBtnCliked) {
+      setSorted(cartData);
+    }
+  }, [isCartBtnCliked, cartData]);
+
+  const handleSortByPrice = () => {
+    const sortedArray = [...cartData].sort((a, b) => a.price - b.price);
+    setSorted(sortedArray);
+  };
 
   return (
     <>
@@ -34,17 +48,17 @@ const Dashboard = () => {
             <div className="flex gap-3 justify-center items-center">
               <button
                 onClick={() => setIsCartBtnClicked(true)}
-                className={`"btn border rounded-full px-8 py-3 ${
-                  isCartBtnCliked && "bg-white text-purple-500 font-bold"
-                } `}
+                className={`btn border rounded-full px-8 py-3 ${
+                  isCartBtnCliked ? "bg-white text-purple-500 font-bold" : ""
+                }`}
               >
                 Cart
               </button>
               <button
                 onClick={() => setIsCartBtnClicked(false)}
-                className={`"btn border rounded-full px-8 py-3 ${
-                  !isCartBtnCliked && "bg-white text-purple-500 font-bold"
-                } `}
+                className={`btn border rounded-full px-8 py-3 ${
+                  !isCartBtnCliked ? "bg-white text-purple-500 font-bold" : ""
+                }`}
               >
                 Wishlist
               </button>
@@ -57,22 +71,18 @@ const Dashboard = () => {
               {isCartBtnCliked ? "Cart" : "Wishlist"}
             </h3>
           </div>
-          {isCartBtnCliked && (
+          {isCartBtnCliked && cartData.length > 0 && (
             <div className="flex items-center gap-5">
               <h3 className="font-bold text-2xl">
-                Total Coast: $ {total.toFixed(2)}
+                Total Cost: $ {total.toFixed(2)}
               </h3>
               <button
-                className={`"btn border rounded-full px-8 py-3 bg-white text-purple-500 font-bold border-purple-500 flex items-center gap-1
-                 `}
+                onClick={handleSortByPrice}
+                className="btn border rounded-full px-8 py-3 bg-white text-purple-500 font-bold border-purple-500 flex items-center gap-1"
               >
                 Sort by price <LuFilter />
               </button>
-              <button
-                className={`"btn border rounded-full px-8 py-3 
-                   bg-purple-500  text-white border-purple-500
-                 `}
-              >
+              <button className="btn border rounded-full px-8 py-3 bg-purple-500 text-white border-purple-500">
                 Purchase
               </button>
             </div>
@@ -83,23 +93,26 @@ const Dashboard = () => {
             !isCartBtnCliked && "hidden"
           }`}
         >
-          {cartData.length > 0 &&
-            cartData.map((prod, idx) => (
+          {sorted.length > 0 ? (
+            sorted.map((prod, idx) => (
               <ProductDataInCart key={idx} prod={prod}></ProductDataInCart>
-            ))}
+            ))
+          ) : (
+            <p className="text-center text-gray-500">Your cart is empty.</p>
+          )}
         </section>
         <section
           className={`max-w-7xl mx-auto space-y-6 ${
             isCartBtnCliked && "hidden"
           }`}
         >
-          {wishlist.length > 0 &&
+          {wishlist.length > 0 ? (
             wishlist.map((prod, idx) => (
-              <ProductDataInWishlisht
-                key={idx}
-                prod={prod}
-              ></ProductDataInWishlisht>
-            ))}
+              <ProductDataInWishlisht key={idx} prod={prod}></ProductDataInWishlisht>
+            ))
+          ) : (
+            <p className="text-center text-gray-500">Your wishlist is empty.</p>
+          )}
         </section>
       </section>
     </>

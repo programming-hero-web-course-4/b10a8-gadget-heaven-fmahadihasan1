@@ -1,15 +1,18 @@
-import { useContext } from "react";
+import { useContext, } from "react";
 import { ImCancelCircle } from "react-icons/im";
 import { CartDataContext } from "../../CartContext";
 
 const ProductDataInCart = ({ prod }) => {
   const { cartData, setCartData } = useContext(CartDataContext);
+  
 
   const handleRemoveProduct = (id) => {
     const data = cartData.filter((product) => product.id !== id);
 
     setCartData(data);
   };
+
+ 
 
   return (
     <section className="flex justify-between border rounded-xl shadow-md p-8 bg-white">
