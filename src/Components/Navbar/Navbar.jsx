@@ -6,7 +6,7 @@ import { useContext } from "react";
 
 const Navbar = () => {
   const { pathname } = useLocation();
-  const { cartData } = useContext(CartDataContext);
+  const { cartData, wishlist } = useContext(CartDataContext);
   const links = (
     <>
       <li>
@@ -68,7 +68,13 @@ const Navbar = () => {
 
           <BsCartDash />
         </Link>
-        <Link to={"/wishlist"}>
+        <Link to={"/dashboard"} className="indicator">
+          {wishlist.length > 0 && (
+            <span className="indicator-item badge-sm text-purple-500 bg-slate-200 rounded-full">
+              {" "}
+              {wishlist.length}{" "}
+            </span>
+          )}
           <IoHeartCircleOutline />
         </Link>
       </div>

@@ -10,7 +10,8 @@ const Details = () => {
 
   const [showingCard, setShowingCard] = useState([]);
 
-  const { cartData, setCartData } = useContext(CartDataContext);
+  const { cartData, setCartData, wishlist, setWishlist } =
+    useContext(CartDataContext);
 
   useEffect(() => {
     fetch("/products.json")
@@ -21,12 +22,25 @@ const Details = () => {
       .catch((err) => console.error(err));
   }, [product_id]);
 
+  const checkExisting = wishlist.find((elm) => showingCard.id === elm.id);
+
   const handleAddToCart = (prod) => {
     const checkAdded = cartData.find((elm) => prod.id === elm.id);
 
     if (!checkAdded) {
       toast.success("Added to Cart");
       setCartData([...cartData, prod]);
+      return;
+    }
+
+    toast.error("Already Added");
+  };
+  const handleAddToWishlist = (prod) => {
+    const checkAdded = wishlist.find((elm) => prod.id === elm.id);
+
+    if (!checkAdded) {
+      toast.success("Added to Wishlist");
+      setWishlist([...wishlist, prod]);
       return;
     }
 
@@ -72,9 +86,23 @@ const Details = () => {
           <div className="space-y-3">
             <h2 className="font-semibold text-3xl">{title}</h2>
             <p className="font-semibold text-xl">Price: $ {price}</p>
-            <p className="font-medium text-sm rounded-full border border-green-400 text-green-600 inline-block py-2 px-4">
-              {availability ? `In stock` : `Out of stock`}
-            </p>
+            <div className="font-medium text-sm flex gap-3">
+              {availability ? (
+                <p className="border border-green-400 text-green-600 py-2 px-4 rounded-full">
+                  {stock_quantity} In stock
+                </p>
+              ) : (
+                <p className="border border-red-400 text-red-600 py-2 px-4 rounded-full">
+                  Out of stock
+                </p>
+              )}
+              <p className="border border-green-400 text-green-600 py-2 px-4 rounded-full">
+                {category}
+              </p>
+              <p className="border border-green-400 text-green-600 py-2 px-4 rounded-full">
+                {brand}
+              </p>
+            </div>
             <p className="font-normal text-lg text-gray-500">{description}</p>
             {specifications && (
               <>
@@ -87,14 +115,20 @@ const Details = () => {
               </>
             )}
             <p className="text-lg font-bold">Ratings : {rating} *</p>
+            <p className="text-lg font-bold">Warranty : {warranty}</p>
+            <p className="text-lg font-bold">Released Date : {release_date}</p>
             <div className="space-x-2 flex items-center">
               <button
-                className="btn bg-purple-600 text-white py-3 px-5 rounded-full flex items-center gap-2"
+                className="btn bg-purple-600 hover:bg-purple-800 text-white py-3 px-5 rounded-full flex items-center gap-2"
                 onClick={() => handleAddToCart(showingCard)}
               >
                 Add to Cart <IoCartOutline />
               </button>
-              <button className="btn rounded-full font-bold">
+              <button
+                disabled={checkExisting}
+                onClick={() => handleAddToWishlist(showingCard)}
+                className="btn rounded-full font-bold text-black border-gray-300 text-2xl"
+              >
                 <CiHeart />
               </button>
             </div>

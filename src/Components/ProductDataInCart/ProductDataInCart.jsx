@@ -7,12 +7,12 @@ const ProductDataInCart = ({ prod }) => {
 
   const handleRemoveProduct = (id) => {
     const data = cartData.filter((product) => product.id !== id);
-    console.log(data);
+
     setCartData(data);
   };
 
   return (
-    <section className="flex justify-between items-center border rounded-xl shadow-md p-8 bg-white">
+    <section className="flex justify-between border rounded-xl shadow-md p-8 bg-white">
       <div className="flex items-center gap-4">
         <figure>
           <div className="w-32 h-full rounded-xl bg-slate-400">0</div>

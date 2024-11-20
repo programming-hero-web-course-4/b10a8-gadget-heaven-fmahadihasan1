@@ -2,9 +2,10 @@ import { useContext, useEffect, useState } from "react";
 import { CartDataContext } from "../CartContext";
 import { LuFilter } from "react-icons/lu";
 import ProductDataInCart from "../Components/ProductDataInCart/ProductDataInCart";
+import ProductDataInWishlisht from "../Components/ProductDataInWishlisht/ProductDataInWishlisht";
 
 const Dashboard = () => {
-  const { cartData } = useContext(CartDataContext);
+  const { cartData, wishlist } = useContext(CartDataContext);
 
   const [isCartBtnCliked, setIsCartBtnClicked] = useState(true);
   const [total, setTotal] = useState(0);
@@ -52,31 +53,52 @@ const Dashboard = () => {
         </section>
         <section className="flex justify-between items-center max-w-7xl mx-auto my-6">
           <div>
-            <h3 className="font-bold text-2xl">Cart</h3>
-          </div>
-          <div className="flex items-center gap-5">
             <h3 className="font-bold text-2xl">
-              Total Coast: $ {total.toFixed(2)}
+              {isCartBtnCliked ? "Cart" : "Wishlist"}
             </h3>
-            <button
-              className={`"btn border rounded-full px-8 py-3 bg-white text-purple-500 font-bold border-purple-500 flex items-center gap-1
+          </div>
+          {isCartBtnCliked && (
+            <div className="flex items-center gap-5">
+              <h3 className="font-bold text-2xl">
+                Total Coast: $ {total.toFixed(2)}
+              </h3>
+              <button
+                className={`"btn border rounded-full px-8 py-3 bg-white text-purple-500 font-bold border-purple-500 flex items-center gap-1
                  `}
-            >
-              Sort by price <LuFilter />
-            </button>
-            <button
-              className={`"btn border rounded-full px-8 py-3 
+              >
+                Sort by price <LuFilter />
+              </button>
+              <button
+                className={`"btn border rounded-full px-8 py-3 
                    bg-purple-500  text-white border-purple-500
                  `}
-            >
-              Purchase
-            </button>
-          </div>
+              >
+                Purchase
+              </button>
+            </div>
+          )}
         </section>
-        <section className="max-w-7xl mx-auto space-y-6">
+        <section
+          className={`max-w-7xl mx-auto space-y-6 ${
+            !isCartBtnCliked && "hidden"
+          }`}
+        >
           {cartData.length > 0 &&
             cartData.map((prod, idx) => (
               <ProductDataInCart key={idx} prod={prod}></ProductDataInCart>
+            ))}
+        </section>
+        <section
+          className={`max-w-7xl mx-auto space-y-6 ${
+            isCartBtnCliked && "hidden"
+          }`}
+        >
+          {wishlist.length > 0 &&
+            wishlist.map((prod, idx) => (
+              <ProductDataInWishlisht
+                key={idx}
+                prod={prod}
+              ></ProductDataInWishlisht>
             ))}
         </section>
       </section>
