@@ -1,6 +1,9 @@
 import { useState, useEffect, useContext } from "react";
 import { useParams } from "react-router-dom";
 import { CartDataContext } from "../../CartContext";
+import { IoCartOutline } from "react-icons/io5";
+import { CiHeart } from "react-icons/ci";
+import toast from "react-hot-toast";
 
 const Details = () => {
   const { product_id } = useParams();
@@ -19,9 +22,15 @@ const Details = () => {
   }, [product_id]);
 
   const handleAddToCart = (prod) => {
-    const checkAdded = cartData.find((elm) => prod === elm);
+    const checkAdded = cartData.find((elm) => prod.id === elm.id);
 
-    return !checkAdded && setCartData([...cartData, prod]);
+    if (!checkAdded) {
+      toast.success("Added to Cart");
+      setCartData([...cartData, prod]);
+      return;
+    }
+
+    toast.error("Already Added");
   };
 
   const {
@@ -78,14 +87,16 @@ const Details = () => {
               </>
             )}
             <p className="text-lg font-bold">Ratings : {rating} *</p>
-            <div className="space-x-2">
+            <div className="space-x-2 flex items-center">
               <button
-                className="btn bg-purple-600 text-white py-3 px-5 rounded-full"
+                className="btn bg-purple-600 text-white py-3 px-5 rounded-full flex items-center gap-2"
                 onClick={() => handleAddToCart(showingCard)}
               >
-                Add to Cart *
+                Add to Cart <IoCartOutline />
               </button>
-              <button className="btn">()</button>
+              <button className="btn rounded-full font-bold">
+                <CiHeart />
+              </button>
             </div>
           </div>
         </section>

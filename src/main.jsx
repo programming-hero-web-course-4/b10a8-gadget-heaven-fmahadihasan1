@@ -7,7 +7,8 @@ import Home from "./Home/Home.jsx";
 import ErrorPage from "./Components/ErropPage/ErrorPage.jsx";
 import Details from "./Components/Details/Details.jsx";
 import CartContext from "./CartContext.jsx";
-import Dashboard from "./Home/Dashboard/Dashboard";
+import Dashboard from "./Dashboard/Dashboard.jsx";
+import { Toaster } from "react-hot-toast";
 
 const router = createBrowserRouter(
   [
@@ -52,5 +53,6 @@ createRoot(document.getElementById("root")).render(
     <CartContext>
       <RouterProvider router={router} />
     </CartContext>
+    <Toaster position="top-center" reverseOrder={true} />
   </StrictMode>
 );
