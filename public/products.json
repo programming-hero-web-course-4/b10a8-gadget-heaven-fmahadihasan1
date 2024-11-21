@@ -1,7 +1,7 @@
 [
   {
     "id": "PRD001",
-    "image": "https://example.com/images/ultrapro-laptop.jpg",
+    "image": "https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcRgN7ZZPNRNbsWpHeIJzKpfX3DvFtW_qsdLZKdXKX406Q3dKRuChPZzUidXKxYAFayd_l2JQNgQuSSRD9k9MDUqwWU1NA5X-_UHolD8kSN_AvfLt2DPFKR_&usqp=CAE",
     "title": "UltraPro Laptop",
     "category": "Computers",
     "price": 1299.99,
@@ -22,7 +22,7 @@
   },
   {
     "id": "PRD002",
-    "image": "https://example.com/images/ecobook-laptop.jpg",
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRzWLFoAQSVYtSGDUJ1q1MF6oFgFoQxik1sQA&s",
     "title": "EcoBook Laptop",
     "category": "Computers",
     "price": 849.99,
@@ -43,7 +43,7 @@
   },
   {
     "id": "PRD003",
-    "image": "https://example.com/images/galaxy-z-max.jpg",
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQH1NUHZJW5pSakVHMoxBRqirKttEWDx0jTVw&s",
     "title": "Galaxy Z Max",
     "category": "Phones",
     "price": 999.99,
@@ -64,7 +64,7 @@
   },
   {
     "id": "PRD004",
-    "image": "https://example.com/images/chrono-smartwatch.jpg",
+    "image": "https://m.media-amazon.com/images/I/51Z3YVLjnzL._AC_UF894,1000_QL80_.jpg",
     "title": "Chrono Smartwatch",
     "category": "Smart Watches",
     "price": 299.99,
@@ -85,7 +85,7 @@
   },
   {
     "id": "PRD005",
-    "image": "https://example.com/images/rapid-charge.jpg",
+    "image": "https://alogic.in/cdn/shop/files/30WRapidPowerUSB-C_USB-AWallCharger_1.webp",
     "title": "Rapid Charge 30W Charger",
     "category": "Chargers",
     "price": 39.99,
@@ -105,7 +105,7 @@
   },
   {
     "id": "PRD006",
-    "image": "https://example.com/images/max-power-bank.jpg",
+    "image": "https://m.media-amazon.com/images/I/41evk7RbHvL._AC_UF1000,1000_QL80_.jpg",
     "title": "Max Power 20000mAh Power Bank",
     "category": "Power Banks",
     "price": 49.99,
@@ -126,7 +126,7 @@
   },
   {
     "id": "PRD007",
-    "image": "https://example.com/images/vision-tab-x.jpg",
+    "image": "https://m.media-amazon.com/images/I/61N1RFGVVCL._SX679_.jpg",
     "title": "Vision Tab X",
     "category": "Tablets",
     "price": 599.99,
@@ -147,7 +147,7 @@
   },
   {
     "id": "PRD008",
-    "image": "https://example.com/images/audiomaster-buds.jpg",
+    "image": "https://i.ebayimg.com/images/g/Fx0AAOSwNxJmXZ35/s-l1200.jpg",
     "title": "AudioMaster Buds Pro",
     "category": "Earbuds",
     "price": 149.99,
@@ -168,7 +168,7 @@
   },
   {
     "id": "PRD009",
-    "image": "https://example.com/images/speedy-car-charger.jpg",
+    "image": "https://m.media-amazon.com/images/I/517olF1JgtL._AC_UF1000,1000_QL80_.jpg",
     "title": "Speedy Car Charger",
     "category": "Chargers",
     "price": 19.99,
@@ -188,7 +188,7 @@
   },
   {
     "id": "PRD010",
-    "image": "https://example.com/images/fitlife-band.jpg",
+    "image": "https://m.media-amazon.com/images/I/71jGnBW5x1L._AC_UF1000,1000_QL80_.jpg",
     "title": "FitLife Band",
     "category": "Fitness Trackers",
     "price": 99.99,
@@ -209,7 +209,7 @@
   },
   {
     "id": "PRD011",
-    "image": "https://example.com/images/smart-home-hub.jpg",
+    "image": "https://www.vesternet.com/cdn/shop/products/GP-AEOHUBV3UK-060522.jpg?v=1652113827&width=800",
     "title": "Smart Home Hub",
     "category": "Smart Home",
     "price": 199.99,
@@ -230,7 +230,7 @@
   },
   {
     "id": "PRD012",
-    "image": "https://example.com/images/solar-powerbank.jpg",
+    "image": "https://www.alebdaa.ae/cdn/shop/files/FullSizeRender_a69ae85e-4827-4ff6-9d8e-77da3a4ca028.jpg?v=1695053864&width=881",
     "title": "SolarMax Power Bank",
     "category": "Power Banks",
     "price": 59.99,
@@ -251,7 +251,7 @@
   },
   {
     "id": "PRD022",
-    "image": "https://example.com/images/ultrapro-laptop.jpg",
+    "image": "https://cdn11.bigcommerce.com/s-g9br3/images/stencil/2048x2048/products/2813/5328/HYDROC_16_-_Back_Angle__17215.1720238289.jpg?c=2",
     "title": "UltraPro Laptop",
     "category": "Computers",
     "price": 1299.99,
@@ -272,7 +272,7 @@
   },
   {
     "id": "PRD021",
-    "image": "https://example.com/images/ecobook-laptop.jpg",
+    "image": "https://gizmodo.com/app/uploads/2024/09/Honor-MagicBook-Art-14-featured.jpg",
     "title": "EcoBook Laptop",
     "category": "Computers",
     "price": 849.99,
@@ -293,7 +293,7 @@
   },
   {
     "id": "PRD013",
-    "image": "https://example.com/images/neon-light-phone.jpg",
+    "image": "https://media.istockphoto.com/id/1469984194/photo/mockup-with-smartphone-in-neon-lighting.jpg?s=612x612&w=0&k=20&c=jw1CxpWPWhfxIdEA-Qyas3ZoBb32GG04GnVTr79DFW4=",
     "title": "Neon Light Phone",
     "category": "Phones",
     "price": 1199.99,
@@ -314,7 +314,7 @@
   },
   {
     "id": "PRD014",
-    "image": "https://example.com/images/zen-smart-watch.jpg",
+    "image": "https://m.media-amazon.com/images/I/71zJsB-9plL._AC_UF1000,1000_QL80_.jpg",
     "title": "Zen Smart Watch",
     "category": "Smart Watches",
     "price": 399.99,
@@ -335,7 +335,7 @@
   },
   {
     "id": "PRD015",
-    "image": "https://example.com/images/astro-tablet.jpg",
+    "image": "https://m.media-amazon.com/images/I/71bxfAjle3L.jpg",
     "title": "Astro Tablet",
     "category": "Tablets",
     "price": 749.99,
@@ -356,7 +356,7 @@
   },
   {
     "id": "PRD016",
-    "image": "https://example.com/images/duo-car-charger.jpg",
+    "image": "https://m.media-amazon.com/images/I/61kY2MStGVL.jpg",
     "title": "Duo Car Charger",
     "category": "Chargers",
     "price": 29.99,
@@ -376,7 +376,7 @@
   },
   {
     "id": "PRD017",
-    "image": "https://example.com/images/wave-sound-speaker.jpg",
+    "image": "https://m.media-amazon.com/images/I/41eK13aIbsL._AC_UF894,1000_QL80_.jpg",
     "title": "Wave Sound Bluetooth Speaker",
     "category": "Audio",
     "price": 179.99,
@@ -397,7 +397,7 @@
   },
   {
     "id": "PRD018",
-    "image": "https://example.com/images/smart-case.jpg",
+    "image": "https://m.media-amazon.com/images/I/81dX+E996UL._AC_UY580_.jpg",
     "title": "SmartCase Laptop Sleeve",
     "category": "Accessories",
     "price": 49.99,
@@ -418,7 +418,7 @@
   },
   {
     "id": "PRD019",
-    "image": "https://example.com/images/mega-powerbank-30000mah.jpg",
+    "image": "https://m.media-amazon.com/images/I/71NnowfLzdL._AC_UF1000,1000_QL80_.jpg",
     "title": "Mega Powerbank 30000mAh",
     "category": "Power Banks",
     "price": 69.99,
@@ -439,7 +439,7 @@
   },
   {
     "id": "PRD020",
-    "image": "https://example.com/images/silence-noise-cancelling-headphones.jpg",
+    "image": "https://m.media-amazon.com/images/I/51Ltm3tbH2L._AC_UF1000,1000_QL80_.jpg",
     "title": "Silence Noise-Cancelling Headphones",
     "category": "Audio",
     "price": 249.99,
@@ -457,5 +457,28 @@
     "warranty": "1 year",
     "release_date": "2023-04-22",
     "stock_quantity": 80
+  },
+  {
+    "id": "PRD023",
+    "image": "https://www.digitaltrends.com/wp-content/uploads/2022/02/galaxy-s22-ultra-and-iphone-13-pro-cameras.jpg?fit=2000%2C1333&p=1",
+    "title": "TechMax Ultra Smartphone",
+    "category": "Phones",
+    "price": 899.99,
+    "description": "Flagship smartphone with cutting-edge technology and sleek design.",
+    "specifications": [
+      "6.7-inch AMOLED Display",
+      "128GB/256GB Storage Options",
+      "5G Connectivity",
+      "Triple Camera Setup (108MP+12MP+10MP)",
+      "5000mAh Battery with Fast Charging",
+      "Snapdragon 8 Gen 2 Processor",
+      "IP68 Water Resistance"
+    ],
+    "availability": true,
+    "rating": 4.6,
+    "brand": "TechMax",
+    "warranty": "2 years",
+    "release_date": "2023-09-15",
+    "stock_quantity": 150
   }
 ]

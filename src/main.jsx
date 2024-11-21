@@ -10,6 +10,7 @@ import CartContext from "./CartContext.jsx";
 import Dashboard from "./Dashboard/Dashboard.jsx";
 import { Toaster } from "react-hot-toast";
 import Career from "./Career/Career";
+import Statistics from "./Statistics/Statistics";
 
 const router = createBrowserRouter(
   [
@@ -24,7 +25,8 @@ const router = createBrowserRouter(
         },
         {
           path: "/statistics",
-          element: <>Statistics</>,
+          element: <Statistics></Statistics>,
+          loader: () => fetch("products.json"),
         },
         {
           path: "/dashboard",

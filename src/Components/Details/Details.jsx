@@ -77,9 +77,7 @@ const Details = () => {
           <figure className="bg-slate-300 flex justify-center items-center p-2 rounded-2xl">
             <img
               className="h-[500px] w-[425px] rounded-xl bg-slate-300"
-              src={
-                "https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcSXcM4Ff9soidsMNC_HnH-yPJTMpJeo4sWIizFFgU5MDRj5nDwnyUC4GDk4FoCdXNIzzyOz9HOIStuk0165WGku3be_srnvVI889kgW2_RpO2MQDuYD_u3m-Q&usqp=CAE"
-              }
+              src={image}
               alt={`image of ${title}`}
             />
           </figure>

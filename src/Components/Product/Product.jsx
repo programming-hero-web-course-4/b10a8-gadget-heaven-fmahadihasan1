@@ -7,22 +7,15 @@ const Product = ({ product }) => {
     title,
     category,
     price,
-    description,
-    specifications,
-    availability,
-    rating,
     brand,
-    warranty,
-    release_date,
-    stock_quantity,
   } = product;
   return (
     <>
       <section className="min-h-28 p-5 rounded-xl border">
-        <figure className="flex justify-center items-center p-2">
+        <figure className="flex justify-center items-center p-2 h-64 bg-slate-100 rounded-xl">
           <img
-            className=" bg-slate-200 shadow-md rounded-md"
-            src={`https://cdn11.bigcommerce.com/s-g9br3/images/stencil/2048x2048/products/2813/5325/HYDROC_16_-_Front_1000x1000__73366.1720238288.jpg?c=2`}
+            className=" bg-slate-200 shadow-md rounded-md h-full"
+            src={image}
             alt={`Image of ${title}`}
           />
         </figure>
