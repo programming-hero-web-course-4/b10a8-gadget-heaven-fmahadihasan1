@@ -1,7 +1,7 @@
 # GADGET HEAVEN
 
 - Live Link : [https://obsequious-lizards.surge.sh/](https://obsequious-lizards.surge.sh/)
-- Requirements : [Requirements](https://github.com/ProgrammingHero1/B10-A8-gadget-heaven/blob/main/Batch-10_Assignment-08.pdf)
+- [Requirements PDF](https://github.com/ProgrammingHero1/B10-A8-gadget-heaven/blob/main/Batch-10_Assignment-08.pdf)
 
 # Gadget Heaven - A Gadget selling website.
 
